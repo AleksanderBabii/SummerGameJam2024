@@ -16,6 +16,10 @@ public class Health : MonoBehaviour
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRenderer;
 
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+    private bool invulnerable;
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -25,43 +29,29 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
+        if (invulnerable) return;
+
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-       if (currentHealth > 0)
-       {
+         if (currentHealth > 0)
+         {
             anim.SetTrigger("Hurt");
             StartCoroutine(Invulnerability());
-       }
-       else
-       {
+         }
+         else
+         {
             if (!dead)
             {
                 anim.SetTrigger("Dies");
 
-                //Player
-                if(GetComponent<PlayerMovement>() != null)
-                    GetComponent<PlayerMovement>().enabled = false;
-
-                // Enemy
-                if (GetComponentInParent<EnemiesPatrol>() != null)
+                //Deactivate all attached component classes
+                foreach (Behaviour component in components)
                 {
-                    GetComponentInParent<EnemiesPatrol>().enabled = false;
+                    component.enabled = false;
                 }
-                    
-
-                if (GetComponent<EnemyKnight>() != null)
-                {
-                    GetComponent<EnemyKnight>().enabled = false;
-                }
-                    
-
-                if (GetComponentInParent<EnemyMage>() != null)
-                {
-                    GetComponent<EnemyMage>().enabled = false;
-                }
-                    
+  
                 dead = true;
             }
-       }
+         }
     }
 
     public void AddHealth(float _value)
@@ -71,6 +61,7 @@ public class Health : MonoBehaviour
 
     private IEnumerator Invulnerability()
     {
+        invulnerable = true;
         Physics2D.IgnoreLayerCollision(9, 10, true);
 
         for (int i = 0; i < numberOfFlashes; i++)
@@ -82,5 +73,13 @@ public class Health : MonoBehaviour
         }
 
         Physics2D.IgnoreLayerCollision(9, 10, false);
+
+        invulnerable = false;
+    }
+
+
+    private void Diactivate()
+    {
+        gameObject.SetActive(false);
     }
 }

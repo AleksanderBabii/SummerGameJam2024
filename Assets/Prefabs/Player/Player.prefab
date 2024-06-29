@@ -239,3 +239,5 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 1
   numberOfFlashes: 4
+  components:
+  - {fileID: 937472437253311350}
