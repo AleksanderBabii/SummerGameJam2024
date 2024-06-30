@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.050041735}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.32}
+  m_Size: {x: 0.16, y: 0.21991652}
   m_EdgeRadius: 0
 --- !u!114 &7020265446038238544
 MonoBehaviour:
@@ -145,8 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  activationDelay: 1
-  activeTime: 1
+  activationDelay: 2
+  activeTime: 3
+  fireTrapSound: {fileID: 8300000, guid: b9a107db5dd4b9a41b4fb26ccbdd3b74, type: 3}
 --- !u!95 &8837699736447954476
 Animator:
   serializedVersion: 5

@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1318911052839396594}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.129, y: -0.011, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -154,7 +154,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016789138, y: -0.057081074}
+  m_Offset: {x: -0.019263148, y: -0.023377866}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36664218, y: 0.5358378}
+  m_Size: {x: 0.19373012, y: 0.4684314}
   m_EdgeRadius: 0
 --- !u!50 &2848870395161606912
 Rigidbody2D:
@@ -228,24 +228,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 2
-  range: 2
+  range: 5
   firePoint: {fileID: 5068498471437997236}
-  fireBall:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  colliderDistance: 0.25
+  fireBall: []
+  colliderDistance: 0.117
   boxCollider: {fileID: 7611175765108121857}
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+  fireBallAttack: {fileID: 8300000, guid: 5850296de3709ed46bee8387c7e54dde, type: 3}
 --- !u!114 &99157398181844234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +255,8 @@ MonoBehaviour:
   components:
   - {fileID: 3625979960816340769}
   - {fileID: 7611175765108121857}
+  hurt: {fileID: 0}
+  dyingSound: {fileID: 8300000, guid: 2a512766930c96d4ba596c87e3cd6de3, type: 3}
 --- !u!114 &-3918337783700753358
 MonoBehaviour:
   m_ObjectHideFlags: 0

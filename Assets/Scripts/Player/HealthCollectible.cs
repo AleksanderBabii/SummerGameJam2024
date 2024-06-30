@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 {
+    [Header("Health Value")]
     [SerializeField] private float healthValue;
+
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip healthPickUp;
+
     private Animator animator;
 
 
@@ -16,6 +21,7 @@ public class HealthCollectible : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            SoundManager.instance.PlaySound(healthPickUp);  
             collision.GetComponent<Health>().AddHealth(healthValue);
             gameObject.SetActive(false);
         }

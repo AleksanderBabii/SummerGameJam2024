@@ -19,6 +19,9 @@ public class EnemyMage : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip fireBallAttack;
+
     //References
     private Animator animator;
     private Health playerHealth;
@@ -50,6 +53,7 @@ public class EnemyMage : MonoBehaviour
 
     private void FireBallAttack()
     {
+        SoundManager.instance.PlaySound(fireBallAttack);
         cooldownTimer = 0;
         fireBall[FindFireball()].transform.position = firePoint.position;
         fireBall[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();

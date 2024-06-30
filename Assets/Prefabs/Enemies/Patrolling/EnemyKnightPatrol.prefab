@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: colliderDistance
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 2986034068736360561, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: swordAttackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 639d58d1730f93f41b6f0eed3f41359d, type: 3}
     - target: {fileID: 7275594200063373554, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09000015
@@ -175,6 +179,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyKnight
       objectReference: {fileID: 0}
+    - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: hurt
+      value: 
+      objectReference: {fileID: 8300000, guid: 217bbc61f22ece04eb36d377a8d9ec52, type: 3}
+    - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: dyingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a512766930c96d4ba596c87e3cd6de3, type: 3}
     - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: components.Array.size
       value: 2

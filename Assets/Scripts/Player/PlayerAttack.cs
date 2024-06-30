@@ -11,6 +11,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip swordSwing;
+    [SerializeField] private AudioClip doubleSwordSwing;
+    
+
     private Animator anim;
     private PlayerMovement playerMovement;
     private Health enemyHealth;
@@ -26,7 +31,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack1();
-        else if(Input.GetMouseButton(1) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+
+        else if (Input.GetMouseButton(1) && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack2();
 
         cooldownTimer += Time.deltaTime;
@@ -34,14 +40,18 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack1()
     {
+        SoundManager.instance.PlaySound(doubleSwordSwing);
         anim.SetTrigger("Attack1");
         cooldownTimer = 0;
+        
     }
 
     private void Attack2()
     {
+        SoundManager.instance.PlaySound(swordSwing);
         anim.SetTrigger("Attack2");
         cooldownTimer = 0;
+        
     }
 
 

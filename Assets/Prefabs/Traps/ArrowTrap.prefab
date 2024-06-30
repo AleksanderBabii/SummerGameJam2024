@@ -103,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1176946937
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 84b0d89aa2c8bfb4c8c1d378fa972fbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -264,9 +264,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09148216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -331,9 +343,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.28450012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.087436676
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -398,9 +422,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09148216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -465,9 +501,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.28450012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.087436676
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -532,9 +580,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09148216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -599,9 +659,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.091483116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -666,9 +738,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.091483116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -733,9 +817,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.28450012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.087436676
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -800,9 +896,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09148216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -867,9 +975,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280351746079307498, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: arrowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
     - target: {fileID: 5140299102318997060, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
       propertyPath: m_Name
       value: Projectile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27640724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318725877503800334, guid: 8686471b3539e354ba16e563e8bbfd61, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.091483116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

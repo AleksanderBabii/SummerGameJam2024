@@ -10,6 +10,10 @@ public class FireTrap : MonoBehaviour
     [Header("FireTrap Timers")]
     [SerializeField] private float activationDelay;
     [SerializeField] private float activeTime;
+
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip fireTrapSound;
+
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
@@ -22,6 +26,7 @@ public class FireTrap : MonoBehaviour
     {
         animator = GetComponent<Animator>(); 
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
     }
 
     private void Update()
@@ -36,13 +41,16 @@ public class FireTrap : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            playerHealth = GetComponent<Health>();
+            playerHealth = collision.GetComponent<Health>();
 
-            if (!trapActivated)
+            if (!trapTriggered)
                 StartCoroutine(ActivateFiretrap());
-            
+ 
             if (trapActivated)
                 collision.GetComponent<Health>().TakeDamage(damage);
+           
+                
+            
         }
     }
 
@@ -65,6 +73,7 @@ public class FireTrap : MonoBehaviour
         spriteRenderer.color = Color.white;
         trapActivated = true;
         animator.SetBool("FireTrapActive", true);
+        SoundManager.instance.PlaySound(fireTrapSound);
 
         //Wait X seconds for trap deactivation and reset all variables and animator
         yield return new WaitForSeconds(activeTime);

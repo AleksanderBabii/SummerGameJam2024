@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class EnemyProjectile : EnemyDamage
 {
+    [Header("Projectile Parameters")]
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
+
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip arrowSound;
     private float lifeTime; 
     private Animator animator;
     private BoxCollider2D BoxCollider2D;
@@ -17,6 +21,7 @@ public class EnemyProjectile : EnemyDamage
     }
     public void ActivateProjectile()
     {
+        SoundManager.instance.PlaySound(arrowSound);
         hit = false;
         lifeTime = 0;
         gameObject.SetActive(true);

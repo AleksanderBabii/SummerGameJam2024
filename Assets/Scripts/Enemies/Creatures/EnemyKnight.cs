@@ -7,6 +7,10 @@ public class EnemyKnight : MonoBehaviour
     [SerializeField] private float range;
     [SerializeField] private int damage;
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip swordAttackSound;
+  
+
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
@@ -24,6 +28,7 @@ public class EnemyKnight : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         enemiesPatrol = GetComponentInParent<EnemiesPatrol>();
+        
     }
 
     private void Update()
@@ -35,8 +40,11 @@ public class EnemyKnight : MonoBehaviour
         {
             if (cooldownTimer >= attackCooldown)
             {
+                
                 cooldownTimer = 0;
                 anim.SetTrigger("MeleeAttack");
+                SoundManager.instance.PlaySound(swordAttackSound);
+
             }
         }
 

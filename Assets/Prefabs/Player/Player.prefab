@@ -197,12 +197,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpPower: 10
+  coyoteTime: 0.25
+  extraJumps: 1
+  wallJumpX: 1500
+  wallJumpY: 750
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   wallLayer:
     serializedVersion: 2
     m_Bits: 256
+  jumpSound: {fileID: 8300000, guid: e12968af2137c4b448ed58859d54e996, type: 3}
 --- !u!114 &4130510655969882489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +229,8 @@ MonoBehaviour:
   damage2: 2
   colliderDistance: 0.41
   boxCollider: {fileID: 937472437253311350}
+  swordSwing: {fileID: 8300000, guid: e9b415dfb2cd05247855fe89b1ece76b, type: 3}
+  doubleSwordSwing: {fileID: 8300000, guid: e0bf5b90382ffed4e871283522fe1d67, type: 3}
 --- !u!114 &4975991704169013335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,4 +247,7 @@ MonoBehaviour:
   iFramesDuration: 1
   numberOfFlashes: 4
   components:
-  - {fileID: 937472437253311350}
+  - {fileID: 5898761217623221320}
+  - {fileID: 4130510655969882489}
+  hurt: {fileID: 8300000, guid: d4ca03bae5930bf47a81c4a6694b89ba, type: 3}
+  dyingSound: {fileID: 8300000, guid: 92d3d8f963e8bfe4cbea319a90cce745, type: 3}

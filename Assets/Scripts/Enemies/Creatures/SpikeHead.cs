@@ -7,6 +7,10 @@ public class SpikeHead : EnemyDamage
     [SerializeField] private float range;
     [SerializeField] private float checkDelay;
     [SerializeField] private LayerMask playerLayer;
+
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip spikeHeadSound;
+
     private Vector2[] directions = new Vector2[4];
     private Vector2 destination;
     private Animator animator;
@@ -48,6 +52,7 @@ public class SpikeHead : EnemyDamage
             
             if(hit.collider != null && !attacking)
             {
+                SoundManager.instance.PlaySound(spikeHeadSound);
                 attacking = true;
                 destination = directions[i];
                 checkTimer = 0;

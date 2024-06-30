@@ -174,3 +174,4 @@ MonoBehaviour:
   damage: 1
   speed: 5
   resetTime: 2
+  arrowSound: {fileID: 8300000, guid: 5dac752c786ff6c4497caa8c292cb901, type: 3}
