@@ -62,11 +62,23 @@ public class Health : MonoBehaviour
          }
     }
 
+
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
+    public void Respawn()
+    {
+        dead = false;
+        AddHealth(startingHealth);
+        anim.ResetTrigger("Die");
+        anim.Play("Idle");
+        StartCoroutine(Invulnerability());
 
+        //Activate all attached component classes
+        foreach (Behaviour component in components)
+            component.enabled = true;
+    }
     private IEnumerator Invulnerability()
     {
         invulnerable = true;
@@ -84,10 +96,12 @@ public class Health : MonoBehaviour
 
         invulnerable = false;
     }
-
-
-    private void Diactivate()
+    private void Deactivate()
     {
         gameObject.SetActive(false);
     }
+
+    //Respawn logic
+   
+
 }
