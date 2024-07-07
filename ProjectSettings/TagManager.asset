@@ -12,15 +12,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Background
+  - 
   - Water
   - UI
+  - Background
   - Foreground
   - Ground
   - Wall
   - Player
   - Enemy
-  - 
   - 
   - 
   - 

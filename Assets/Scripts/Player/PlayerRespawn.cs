@@ -6,20 +6,35 @@ public class PlayerRespawn : MonoBehaviour
     private Transform currentCheckpoint; //Storing last checkpoint
     private Health playerHealth;
 
+    private UIManager uiManager;
+
 
     private void Awake()
     {
         playerHealth = GetComponent<Health>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
-    public void Respawn()
+    public void RespawnCheck()
     {
-        transform.position = currentCheckpoint.position;//Moves player to the checkpoint location
+        //Check if checkpoint is available
+        if (currentCheckpoint == null)
+        {
+            //Show game over screen
+            uiManager.GameOver();
+            return; //won't execute the rest of the code
+        }
+        else
+            RespawnMade();
+       
+    }
+    public void RespawnMade()
+    {
         playerHealth.Respawn(); //Restore player health and reset animation
-
+        transform.position = currentCheckpoint.position;//Moves player to the checkpoint location
 
         //Move camera to checkpoint
-        Camera.main.GetComponent<CameraController>().MoveCamera(currentCheckpoint.parent);
+        Camera.main.GetComponent<CameraController>().FollowPlayer();
     }
 
 

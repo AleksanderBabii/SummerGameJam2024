@@ -67,6 +67,7 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
+    //Respawn logic
     public void Respawn()
     {
         dead = false;
@@ -101,7 +102,7 @@ public class Health : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    //Respawn logic
+    
    
 
 }

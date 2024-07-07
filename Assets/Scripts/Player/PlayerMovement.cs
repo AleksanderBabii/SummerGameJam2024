@@ -88,6 +88,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+
     private void Jump()
     {
         if (coyoteCounter < 0 && !onWall() && jumpCounter <= 0) return; // If coyote counter is 0 or less and not on the wall, Player won't do anything
