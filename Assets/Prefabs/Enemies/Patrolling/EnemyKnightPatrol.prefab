@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 298820287150172977}
   - component: {fileID: 7051168273593721031}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyKnightPatrol
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5918720729305272190}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -78,7 +78,7 @@ Transform:
   m_GameObject: {fileID: 1114655712082899467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: 0, z: 0}
+  m_LocalPosition: {x: -5.46, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1973879091043798078}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -109,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 5559660661587316143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 0, z: 0}
+  m_LocalPosition: {x: 7.65, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135,13 +135,17 @@ PrefabInstance:
       propertyPath: swordAttackSound
       value: 
       objectReference: {fileID: 8300000, guid: 639d58d1730f93f41b6f0eed3f41359d, type: 3}
+    - target: {fileID: 2986034068736360561, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7275594200063373554, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09000015
       objectReference: {fileID: 0}
     - target: {fileID: 7275594200063373554, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.73
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 7275594200063373554, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: m_LocalPosition.z
@@ -179,6 +183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyKnight
       objectReference: {fileID: 0}
+    - target: {fileID: 7326815952154140482, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: hurt
       value: 
@@ -189,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 2a512766930c96d4ba596c87e3cd6de3, type: 3}
     - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: components.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
       propertyPath: components.Array.data[0]
@@ -199,6 +207,18 @@ PrefabInstance:
       propertyPath: components.Array.data[1]
       value: 
       objectReference: {fileID: 8602429852051799562}
+    - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: components.Array.data[2]
+      value: 
+      objectReference: {fileID: 8411514855176435653}
+    - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: components.Array.data[3]
+      value: 
+      objectReference: {fileID: 3639471558018969624}
+    - target: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+      propertyPath: components.Array.data[4]
+      value: 
+      objectReference: {fileID: 8899544881610338623}
     m_RemovedComponents:
     - {fileID: 3004394012847118673, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
     m_RemovedGameObjects: []
@@ -213,6 +233,28 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3557156420105790340, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
   m_PrefabInstance: {fileID: 2013819538531250281}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3639471558018969624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2986034068736360561, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+  m_PrefabInstance: {fileID: 2013819538531250281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105313596253237035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0d54ab4592fa14a8d08ada9b0e99bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8411514855176435653 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8018995598069008300, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}
+  m_PrefabInstance: {fileID: 2013819538531250281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105313596253237035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9e451ab7763e642bf1e57f2cd1cde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8602429852051799562 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7823735980718165603, guid: eff3fc57629857d43939f5a1a71b0269, type: 3}

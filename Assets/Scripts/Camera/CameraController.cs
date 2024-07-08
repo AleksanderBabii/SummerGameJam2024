@@ -7,7 +7,11 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float followSpeed;
     [SerializeField] private float yOffset;
     [SerializeField] private Transform target;
-   
+
+    private void Start()
+    {
+        transform.position = target.position;
+    }
     private void Update()
     {
         FollowPlayer();
